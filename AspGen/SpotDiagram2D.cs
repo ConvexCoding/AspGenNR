@@ -384,18 +384,18 @@ namespace AspGen
                 SetChartScale(maxscalefactor);
             else
             {
-                double maxX = pts.Max(e => e.X);
-                double minX = pts.Min(e => e.X);
-                double maxY = pts.Max(e => e.Y);
-                double minY = pts.Min(e => e.Y);
+                double maxX = pts.Max(p => p.X);
+                double minX = pts.Min(p => p.X);
+                double maxY = pts.Max(p => p.Y);
+                double minY = pts.Min(p => p.Y);
                 double diffx = maxX - minX;
                 double diffy = maxY - minY;
 
                 double zerolimit = 0.001;
 
                 //double ctrX = (maxX + minX) / 2;
-                double ctrX = pts.Sum(e => e.X) / pts.Count;
-                double ctrY = pts.Sum(e => e.Y) / pts.Count;
+                double ctrX = pts.Sum(p => p.X) / pts.Count;
+                double ctrY = pts.Sum(p => p.Y) / pts.Count;
                 if (Math.Abs(ctrX) < zerolimit)
                     ctrX = 0.0;
                 else
