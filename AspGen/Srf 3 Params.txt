@@ -1,0 +1,24 @@
+
+Surface 3 Parameters from OSLO (use Foramt F13
+
+X = 0
+Y = 4.8597204078115
+Z = 4.9664516932799
+
+YANG = -2.9301814099537
+
+DirX = 0.0
+DirY = -0.0511190234119
+DirZ = 0.9986925680335 
+
+AOI = 2.4798527333084
+AOR = 3.721233441742
+
+Dir Sines
+OSNVL (y) =  0.0138060238858
+OSNVM (z) =  0.996277578173
+
+norm in radians =  
+aoi0 in radians = 
+
+

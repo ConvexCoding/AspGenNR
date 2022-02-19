@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{69FDA1D0-A6BE-407F-95F0-BC4CAC3D0EAE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AspGen</RootNamespace>
+    <AssemblyName>AspGen</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ll_designer_3OH_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>latest</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>latest</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChangeSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeSettings.designer.cs">
+      <DependentUpon>ChangeSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiffSpotSizeMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiffSpotSizeMap.Designer.cs">
+      <DependentUpon>DiffSpotSizeMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtendedSourcePlot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtendedSourcePlot.Designer.cs">
+      <DependentUpon>ExtendedSourcePlot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtSource3DMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtSource3DMap.Designer.cs">
+      <DependentUpon>ExtSource3DMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FermiDiracFit.cs" />
+    <Compile Include="FormDimensionsQuery.cs" />
+    <Compile Include="FourierTransform.cs" />
+    <Compile Include="gFFTExt.cs" />
+    <Compile Include="gGraphExt.cs" />
+    <Compile Include="DisplayText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayText.Designer.cs">
+      <DependentUpon>DisplayText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrawRayTrace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrawRayTrace.Designer.cs">
+      <DependentUpon>DrawRayTrace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gClass.cs" />
+    <Compile Include="gExtensions.cs" />
+    <Compile Include="gMath.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpOnSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpOnSettings.designer.cs">
+      <DependentUpon>HelpOnSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputRayPlot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputRayPlot.Designer.cs">
+      <DependentUpon>InputRayPlot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LensDrawing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LensDrawing.Designer.cs">
+      <DependentUpon>LensDrawing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialIndex.cs" />
+    <Compile Include="Misc.cs" />
+    <Compile Include="PopUpDataTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUpDataTable.Designer.cs">
+      <DependentUpon>PopUpDataTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUpRayTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUpRayTable.Designer.cs">
+      <DependentUpon>PopUpRayTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Prompt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prompt.Designer.cs">
+      <DependentUpon>Prompt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PSF_DiffractionBased.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PSF_DiffractionBased.Designer.cs">
+      <DependentUpon>PSF_DiffractionBased.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetChartAxisNotify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetChartAxisNotify.Designer.cs">
+      <DependentUpon>SetChartAxisNotify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetChartAxis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetChartAxis.Designer.cs">
+      <DependentUpon>SetChartAxis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpotDiagram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpotDiagram.Designer.cs">
+      <DependentUpon>SpotDiagram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpotDiagram2D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpotDiagram2D.Designer.cs">
+      <DependentUpon>SpotDiagram2D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RayTraceMethods.cs" />
+    <Compile Include="Tools.cs" />
+    <Compile Include="TransverseSphericalPlot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransverseSphericalPlot.Designer.cs">
+      <DependentUpon>TransverseSphericalPlot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaveFrontErrorPlot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaveFrontErrorPlot.Designer.cs">
+      <DependentUpon>WaveFrontErrorPlot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WFE2DMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WFE2DMap.Designer.cs">
+      <DependentUpon>WFE2DMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WithInClass.cs" />
+    <EmbeddedResource Include="ChangeSettings.resx">
+      <DependentUpon>ChangeSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiffSpotSizeMap.resx">
+      <DependentUpon>DiffSpotSizeMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayText.resx">
+      <DependentUpon>DisplayText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawRayTrace.resx">
+      <DependentUpon>DrawRayTrace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtendedSourcePlot.resx">
+      <DependentUpon>ExtendedSourcePlot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtSource3DMap.resx">
+      <DependentUpon>ExtSource3DMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpOnSettings.resx">
+      <DependentUpon>HelpOnSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputRayPlot.resx">
+      <DependentUpon>InputRayPlot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LensDrawing.resx">
+      <DependentUpon>LensDrawing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUpDataTable.resx">
+      <DependentUpon>PopUpDataTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUpRayTable.resx">
+      <DependentUpon>PopUpRayTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prompt.resx">
+      <DependentUpon>Prompt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PSF_DiffractionBased.resx">
+      <DependentUpon>PSF_DiffractionBased.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetChartAxisNotify.resx">
+      <DependentUpon>SetChartAxisNotify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetChartAxis.resx">
+      <DependentUpon>SetChartAxis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpotDiagram.resx">
+      <DependentUpon>SpotDiagram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpotDiagram2D.resx">
+      <DependentUpon>SpotDiagram2D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransverseSphericalPlot.resx">
+      <DependentUpon>TransverseSphericalPlot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaveFrontErrorPlot.resx">
+      <DependentUpon>WaveFrontErrorPlot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WFE2DMap.resx">
+      <DependentUpon>WFE2DMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ll_designer_3OH_icon.ico" />
+    <Content Include="rainbow.png" />
+    <Content Include="Resources\AspEqMedium.PNG" />
+    <Content Include="Resources\AspEqSmall.PNG" />
+    <Content Include="Resources\AspEquation.PNG" />
+    <EmbeddedResource Include="Resources\SettingsHelp.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy /Y "$(TargetDir)$(ProjectName).exe" "$(GDeskTop)\$(ProjectName).exe"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

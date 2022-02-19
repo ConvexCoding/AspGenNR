@@ -1,0 +1,15 @@
+DrawLensDrawCL (Boolean)	Draw a long center line through lens and image plane.
+DrawLensPreRayDistance (double)	The length of rays before 1st lens surface.
+ExtScrBinSize (double)	The size of bins (in mm) used in the extended source analysis.
+ExtScrVerticalAverage1D (Int32)	Number of adjcents pixels used to average data in Extended Source Cross Section plot.
+ExtSrcNoofBaseRays (Int32)	Number of base rays used in the extened source analysis. Total rays will be this value x ExtSrcNoofAngles value.
+ExtSrcNoofAngles (Int32)	Number of angles per ray used in extended source analysis.
+InputRaySet (Int32)	The set of rays used in a merit function. These rays are listed when clicking the ""Display Err Func"" button.
+NumberOfDrawLensRays (Int32)	The number of rays drawn in lens drawing, x2 (1x positive & 1x negative half of aperture).
+NoOfDigitsSpotDiagLabels (Int32)	Number of significant digits used on the Spot Diagram Plot axis labels.
+PSFBeamGridSize (Int32)	Grid size used to cover the input beam for PSF calculation.
+PSFTotalGridSize (Int 32)	Overlapping grid used in FFT calculation of PSF.
+SpotDiagramRadialSamples (Int32)	Number of grid points used in 2D Spot Diagram plot.
+SpotDiagramSpokesInc (Int32)	Angle increment for drawing wavelength on spot diagram plots.
+TransversDataPoints (Int32)	Number of data points used in Transverse Spherical Aberration Plot.
+WFE2DMapSize (Int32)	Density of the bitmap that is constructed for the Wave Front Error 2D plot.
